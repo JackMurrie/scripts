@@ -1,0 +1,155 @@
+format = """
+[](#33658A)\
+$time\
+[](bg:#86BBD8 fg:#33658A)\
+$battery\
+[ ](fg:#86BBD8)\
+$all
+"""
+
+[time]
+disabled = false
+time_format = "%T"
+style = "bg:#33658A"
+format = '[$time ]($style)'
+
+[battery]
+format = "[ $symbol]($style)"
+
+[[battery.display]]
+threshold = 10
+style = "bg:#86BBD8 fg:#8f0912"
+
+[[battery.display]]
+threshold = 20
+style = "bg:#86BBD8 fg:#fcbe11"
+
+[[battery.display]]
+threshold = 80
+style = "bg:#86BBD8"
+
+[[battery.display]]
+threshold = 100
+style = "bg:#86BBD8 fg:#077829"
+
+[git_branch]
+format = " [$branch$version]($style) "
+
+[package]
+format = "[$version](208 bold) "
+
+[sudo]
+disabled = false
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed white"
+disabled = false
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = "took [$duration]($style)"
+
+[hostname]
+ssh_only = true
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = false
+
+[character]
+error_symbol = "[❌](bold red)"
+
+[buf]
+format = "[$symbol]($style)"
+
+[cmake]
+format = "[$symbol]($style)"
+
+[cobol]
+format = "[$symbol]($style)"
+
+[crystal]
+format = "[$symbol]($style)"
+
+[dart]
+format = "[$symbol]($style)"
+
+[deno]
+format = "[$symbol]($style)"
+
+[dotnet]
+format = "[$symbol]($style)"
+
+[elixir]
+format = '[$symbol]($style)'
+
+[elm]
+format = '[$symbol]($style)'
+
+[erlang]
+format = '[$symbol]($style)'
+
+[golang]
+format = '[$symbol]($style)'
+
+[helm]
+format = '[$symbol]($style)'
+
+[julia]
+format = '[$symbol]($style)'
+
+[kotlin]
+format = '[$symbol]($style)'
+
+[lua]
+format = '[$symbol]($style)'
+
+[nim]
+format = '[$symbol]($style)'
+
+[nodejs]
+format = '[$symbol]($style)'
+
+[ocaml]
+format = '[$symbol(\($switch_indicator$switch_name\) )]($style)'
+
+[perl]
+format = '[$symbol]($style)'
+
+[php]
+format = '[$symbol]($style)'
+
+[pulumi]
+format = '[$symbol$stack]($style)'
+
+[purescript]
+format = '[$symbol]($style)'
+
+[python]
+format = '[${symbol}${pyenv_prefix}(\($virtualenv\) )]($style)'
+
+[red]
+format = '[$symbol]($style)'
+
+[rlang]
+format = '[$symbol]($style)'
+
+[ruby]
+format = '[$symbol]($style)'
+
+[rust]
+format = '[$symbol]($style)'
+
+[swift]
+format = '[$symbol]($style)'
+
+[vagrant]
+format = '[$symbol]($style)'
+
+[vlang]
+format = '[$symbol]($style)'
+
+[zig]
+format = '[$symbol]($style)'
